@@ -126,7 +126,7 @@ nav .material-icons:hover {
   transform: rotate(45deg) translate(-5px, 0px) ;
 }
 
-@media only screen and (min-width : 1200px){
+@media only screen and (min-width : 900px){
   #mobileMenuButton{
     display: none;
   }
@@ -164,107 +164,56 @@ nav .material-icons:hover {
     top: 50px;
   }
 
-  .col {
+  .col100 {
     width: 100%;
     height: auto;
+    position: relative;
     float: left;
   }
 
-  .col15{
+  .col75{
+    width: 75%;
+    height: auto;
+    position: relative;
+    float: left;
+  }
+
+  .col66{
     width: 66.66%;
-    height: 100px;
+    height: auto;
     position: relative;
     float: left;
   }
 
-  .col2 {
+  .col50 {
     width: 50%;
-    height: 100px;
+    height: auto;
     position: relative;
     float: left;
   }
 
-  .col3{
+  .col33{
     width: 33.33%;
-    height: 100px;
+    height: auto;
     position: relative;
     float: left;
   }
 
-  .col4 {
+  .col330{
+    width: 33.33%;
+    height: auto;
+    position: relative;
+    float: left;
+  }
+
+  .col25 {
     width: 25%;
-    height: 100px;
-    position: relative;
-    float: left;
-  }
-}
-
-@media only screen and (max-width : 1200px) and (min-width : 900px){
-  #mobileMenuButton{
-    display: none;
-  }
-
-  nav{
-    display: inline-block;
-  }
-
-  .mainTitle {
-    position: absolute;
-    left: 5%;
-  }
-
-  .mainMenu {
-    display: inline-block;
-  }
-
-  .mainMenuItems {
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 400;
-  }
-
-  .rightMenu {
-    position: absolute;
-    right: 5%;
-    display: inline-block;
-  }
-
-  .row {
-    width: 100%;
-    height: calc(100vh - 50px);
-    position: relative;
-    float: left;
-    top: 50px;
-  }
-
-  .col {
-    width: 100%;
-    height: auto;
-    float: left;
-  }
-
-  .col15{
-    width: 66.66%;
-    height: 100px;
-    position: relative;
-    float: left;
-  }
-
-  .col2 {
-    width: 50%;
     height: auto;
     position: relative;
     float: left;
   }
 
-  .col3{
-    width: 33.33%;
-    height: auto;
-    position: relative;
-    float: left;
-  }
-
-  .col4 {
+  .col250 {
     width: 25%;
     height: auto;
     position: relative;
@@ -272,7 +221,9 @@ nav .material-icons:hover {
   }
 }
 
-@media only screen and (max-width : 900px) and (min-width : 600px){
+
+
+@media only screen and (max-width : 900px){
   #mobileMenuButton{
     cursor: pointer;
     position: absolute;
@@ -326,130 +277,61 @@ nav .material-icons:hover {
     top: 50px;
   }
 
-  .col {
+  .col100 {
     width: 100%;
     height: auto;
     position: relative;
     float: left;
   }
 
-  .col15{
-    width: 66.66%;
-    height: auto;
-    position: relative;
-    float: left;
-  }
-
-  .col2 {
+  .col75{
     width: 100%;
     height: auto;
     position: relative;
     float: left;
   }
 
-  .col3{
+  .col66{
+    width: 100%;
+    height: auto;
+    position: relative;
+    float: left;
+  }
+
+  .col50 {
+    width: 100%;
+    height: auto;
+    position: relative;
+    float: left;
+  }
+
+  .col33{
     width: 50%;
     height: auto;
     position: relative;
     float: left;
   }
 
-  .col4 {
-    width: 25%;
-    height: auto;
-    position: relative;
-    float: left;
-  }
-
-
-}
-
-@media only screen and (max-width : 600px){
-
-  #mobileMenuButton{
-    cursor: pointer;
-    position: absolute;
-    top: 0px;
-    padding: 17px;
-    left: 5%;
-  }
-
-  .mainTitle {
-    position: relative;
-  }
-
-  nav{
-    position: fixed;
-    width: 80%;
-    height: 100%;
-    background-color: #DDDDDD;
-    top: 50px;
-    left: -80%;
-  }
-
-  .mainMenu {
-    display: block;
-    top: 30px;
-  }
-
-  .rightMenu{
-    position: absolute;
-    display: block;
-    text-align: center;
-    top: 0px;
-    right: 5%;
-  }
-
-  .mainMenuItems{
-    display: block;
-    font-size: 20px;
-    font-weight: 600;
-  }
-
-  #rightMenu2{
-    display: none;
-  }
-
-  .row {
-    width: 100%;
-    height: auto;
-    min-height: 500px;
-    position: relative;
-    float: left;
-    top: 50px;
-  }
-
-  .col {
-    width: 100%;
-    height: auto;
-    float: left;
-  }
-
-  .col15{
-    width: 66.66%;
-    height: 100px;
-    position: relative;
-    float: left;
-  }
-
-  .col2 {
+  .col330{
     width: 100%;
     height: auto;
     position: relative;
     float: left;
   }
 
-  .col3{
-    width: 100%;
-    height: auto;
-    position: relative;
-    float: left;
-  }
-
-  .col4 {
+  .col25 {
     width: 50%;
     height: auto;
     position: relative;
     float: left;
   }
+
+  .col250 {
+    width: 100%;
+    height: auto;
+    position: relative;
+    float: left;
+  }
+
+
 }
