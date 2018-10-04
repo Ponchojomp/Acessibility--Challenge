@@ -1,5 +1,455 @@
 * {
   box-sizing: border-box;
-  padding: 0px;
-  margin: 0px;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-family: sans-serif;
+  color: #333333;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+
+}
+
+body {
+  /*overflow: hidden;*/
+}
+
+.mainNav {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid black;
+  overflow: hidden;
+  text-align: center;
+  z-index: 1000;
+  background-color: white;
+}
+
+nav {
+  text-align: center;
+  transition: 0.2s;
+  z-index: 1000;
+}
+
+.mainTitle {
+  display: inline-block;
+  font-size: 20px;
+  padding: 11px 2px;
+  cursor: pointer;
+  font-weight: 800;
+  color: #444444;
+  z-index: 1100;
+}
+
+.mainMenu {
+  position: relative;
+}
+
+.mainMenuItems {
+  position: relative;
+  list-style-type: none;
+  padding: 17px 16px;
+  cursor: pointer;
+  color: #444444;
+}
+
+.rightMenu {
+
+}
+
+#rightMenu1{
+  display: inline-block;
+  position: relative;
+  list-style-type: none;
+  padding: 12px 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#rightMenu2{
+  display: inline-block;
+  position: relative;
+  list-style-type: none;
+  padding: 12px 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+#rightMenu3{
+  display: inline-block;
+  position: relative;
+  list-style-type: none;
+  padding: 12px 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+nav .material-icons {
+  font-size: 26px;
+  color: #444444;
+}
+
+nav .material-icons:hover {
+  color: black;
+}
+
+.iconBarOne {
+  width: 25px;
+  height: 3px;
+  background-color: #444444;
+  margin: 4px 0;
+  transition: 0.2s;
+  z-index: 150;
+  border-radius: 100px;
+}
+
+.iconBarTwo {
+  width: 25px;
+  height: 3px;
+  background-color: #444444;
+  margin: 4px 0;
+  transition: 0.2s;
+  z-index: 150;
+  border-radius: 100px;
+}
+
+.mobileBtnCross .iconBarOne {
+  -webkit-transform: rotate(-45deg) translate(-5px, 0px) ;
+  transform: rotate(-45deg) translate(-5px, 0px) ;
+}
+
+.mobileBtnCross .iconBarTwo {
+  -webkit-transform: rotate(45deg) translate( -5px, 0px) ;
+  transform: rotate(45deg) translate(-5px, 0px) ;
+}
+
+@media only screen and (min-width : 1200px){
+  #mobileMenuButton{
+    display: none;
+  }
+
+  nav{
+    display: inline-block;
+  }
+
+  .mainTitle {
+    position: absolute;
+    left: 5%;
+  }
+
+  .mainMenu {
+    display: inline-block;
+  }
+
+  .mainMenuItems {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .rightMenu {
+    position: absolute;
+    right: 5%;
+    display: inline-block;
+  }
+
+  .row {
+    width: 100%;
+    height: calc(100vh - 50px);
+    position: relative;
+    float: left;
+    top: 50px;
+  }
+
+  .col {
+    width: 100%;
+    height: auto;
+    float: left;
+  }
+
+  .col15{
+    width: 66.66%;
+    height: 100px;
+    position: relative;
+    float: left;
+  }
+
+  .col2 {
+    width: 50%;
+    height: 100px;
+    position: relative;
+    float: left;
+  }
+
+  .col3{
+    width: 33.33%;
+    height: 100px;
+    position: relative;
+    float: left;
+  }
+
+  .col4 {
+    width: 25%;
+    height: 100px;
+    position: relative;
+    float: left;
+  }
+}
+
+@media only screen and (max-width : 1200px) and (min-width : 900px){
+  #mobileMenuButton{
+    display: none;
+  }
+
+  nav{
+    display: inline-block;
+  }
+
+  .mainTitle {
+    position: absolute;
+    left: 5%;
+  }
+
+  .mainMenu {
+    display: inline-block;
+  }
+
+  .mainMenuItems {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .rightMenu {
+    position: absolute;
+    right: 5%;
+    display: inline-block;
+  }
+
+  .row {
+    width: 100%;
+    height: calc(100vh - 50px);
+    position: relative;
+    float: left;
+    top: 50px;
+  }
+
+  .col {
+    width: 100%;
+    height: auto;
+    float: left;
+  }
+
+  .col15{
+    width: 66.66%;
+    height: 100px;
+    position: relative;
+    float: left;
+  }
+
+  .col2 {
+    width: 50%;
+    height: auto;
+    position: relative;
+    float: left;
+  }
+
+  .col3{
+    width: 33.33%;
+    height: auto;
+    position: relative;
+    float: left;
+  }
+
+  .col4 {
+    width: 25%;
+    height: auto;
+    position: relative;
+    float: left;
+  }
+}
+
+@media only screen and (max-width : 900px) and (min-width : 600px){
+  #mobileMenuButton{
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    padding: 17px;
+    left: 5%;
+  }
+
+  .mainTitle {
+    position: relative;
+  }
+
+  nav{
+    position: fixed;
+    width: 80%;
+    height: 100%;
+    background-color: #DDDDDD;
+    top: 50px;
+    left: -80%;
+  }
+
+  .mainMenu {
+    display: block;
+    top: 30px;
+  }
+
+  .rightMenu{
+    position: absolute;
+    display: block;
+    text-align: center;
+    top: 0px;
+    right: 5%;
+  }
+
+  .mainMenuItems{
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  #rightMenu2{
+    display: none;
+  }
+
+  .row {
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+    position: relative;
+    float: left;
+    top: 50px;
+  }
+
+  .col {
+    width: 100%;
+    height: auto;
+    position: relative;
+    float: left;
+  }
+
+  .col15{
+    width: 66.66%;
+    height: auto;
+    position: relative;
+    float: left;
+  }
+
+  .col2 {
+    width: 100%;
+    height: auto;
+    position: relative;
+    float: left;
+  }
+
+  .col3{
+    width: 50%;
+    height: auto;
+    position: relative;
+    float: left;
+  }
+
+  .col4 {
+    width: 25%;
+    height: auto;
+    position: relative;
+    float: left;
+  }
+
+
+}
+
+@media only screen and (max-width : 600px){
+
+  #mobileMenuButton{
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    padding: 17px;
+    left: 5%;
+  }
+
+  .mainTitle {
+    position: relative;
+  }
+
+  nav{
+    position: fixed;
+    width: 80%;
+    height: 100%;
+    background-color: #DDDDDD;
+    top: 50px;
+    left: -80%;
+  }
+
+  .mainMenu {
+    display: block;
+    top: 30px;
+  }
+
+  .rightMenu{
+    position: absolute;
+    display: block;
+    text-align: center;
+    top: 0px;
+    right: 5%;
+  }
+
+  .mainMenuItems{
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  #rightMenu2{
+    display: none;
+  }
+
+  .row {
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+    position: relative;
+    float: left;
+    top: 50px;
+  }
+
+  .col {
+    width: 100%;
+    height: auto;
+    float: left;
+  }
+
+  .col15{
+    width: 66.66%;
+    height: 100px;
+    position: relative;
+    float: left;
+  }
+
+  .col2 {
+    width: 100%;
+    height: auto;
+    position: relative;
+    float: left;
+  }
+
+  .col3{
+    width: 100%;
+    height: auto;
+    position: relative;
+    float: left;
+  }
+
+  .col4 {
+    width: 50%;
+    height: auto;
+    position: relative;
+    float: left;
+  }
 }

@@ -1,10 +1,50 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<html>
   <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" src="stylesheet.css" />
-    <title></title>
-  </head>
-  <body>
+    <title>Framework</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="UTF-8">
+    <style>
 
+      p {
+        text-align: center;
+        padding: 10%;
+        color: white;
+        font-size: 20px;
+      }
+
+
+    </style>
+  </head>
+  <body ontouchstart="p1hanleTouchStart(event)" ontouchmove="p1hanleTouchMove(event)" onresize="getScreeWidth()" onkeydown="keyEvent(event)">
+    <div class="mainNav">
+      <div class="mainTitle">KOLLO</div>
+      <div id="mobileMenuButton">
+        <div class="iconBarOne"></div>
+        <div class="iconBarTwo"></div>
+      </div>
+      <nav id="navMenu">
+        <ul class="mainMenu">
+          <li class="mainMenuItems" onclick="scrollPage('row1')">CONTAINER 1</li>
+          <li class="mainMenuItems" onclick="scrollPage('row2')">CONTAINER 2</li>
+          <li class="mainMenuItems" onclick="scrollPage('row3')">CONTAINER 3</li>
+          <li class="mainMenuItems" onclick="scrollPage('row4')">CONTAINER 4</li>
+        </ul>
+      </nav>
+    </div>
+    <div class="row" id="row1" style="background-color:red">
+
+    </div>
+    <div class="row" id="row2" style="background-color:blue">
+
+    </div>
+    <div class="row" id="row3" style="background-color:green">
+
+    </div>
+    <div class="row" id="row4" style="background-color:grey">
+
+    </div>
   </body>
+  <script src="swipeandscroll.js"></script>
 </html>
