@@ -202,6 +202,9 @@ function scrollPage(elmnt){
   }
 }
 
+
+document.body.addEventListener("keydown", keyEvent);
+
 function keyEvent(e){
 
   e = e || window.event;
@@ -209,24 +212,39 @@ function keyEvent(e){
   switch(e.keyCode){
     case 40:
       scrollPage("next");
+      keyTimeout();
     break;
     case 39:
       scrollPage("next");
+      keyTimeout();
     break;
     case 34:
       scrollPage("next");
+      keyTimeout();
     break;
     case 32:
       scrollPage("next");
+      keyTimeout();
     break;
     case 38:
       scrollPage("prev");
+      keyTimeout();
     break;
     case 37:
       scrollPage("prev");
+      keyTimeout();
     break;
     case 33:
       scrollPage("prev");
+      keyTimeout();
     break;
+  }
+
+  function keyTimeout(){
+    document.body.removeEventListener("keydown", keyEvent);
+    setTimeout(function(){
+      document.body.addEventListener("keydown", keyEvent);
+    },420);
+
   }
 }
