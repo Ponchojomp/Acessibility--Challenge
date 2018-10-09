@@ -1,0 +1,13 @@
+#row1 {
+
+  background-image:
+        linear-gradient(
+          rgb(0, 0, 120, 0.85),
+          rgb(0, 0, 120, 0.85)
+        ),
+        url("bilder/stock1.jpeg");
+      background-position: center;
+    }
+
+
+}
