@@ -8,13 +8,13 @@
     <meta charset="UTF-8">
     <style>
 
-      p {
+    /*  p {
         text-align: center;
         padding: 10%;
         color: white;
         font-size: 20px;
       }
-
+      */
 
     </style>
   </head>
@@ -27,23 +27,90 @@
       </div>
       <nav id="navMenu">
         <ul class="mainMenu">
-          <li class="mainMenuItems" onclick="scrollPage('row1')">CONTAINER 1</li>
-          <li class="mainMenuItems" onclick="scrollPage('row2')">CONTAINER 2</li>
-          <li class="mainMenuItems" onclick="scrollPage('row3')">CONTAINER 3</li>
-          <li class="mainMenuItems" onclick="scrollPage('row4')">CONTAINER 4</li>
+          <li class="mainMenuItems" onclick="scrollPage('row1')">Home</li>
+          <li class="mainMenuItems" onclick="scrollPage('row2')">Compatibility</li>
+          <li class="mainMenuItems" onclick="scrollPage('row3')">Calendar</li>
+          <li class="mainMenuItems" onclick="scrollPage('row4')">Accessibility</li>
         </ul>
       </nav>
     </div>
     <div class="row" id="row1">
+      <h1> Award winning LMS </h1><br>
+      <h3>Write somthing here</h3>
     </div>
     <div class="row" id="row2">
-
+      <div id="row2Text">
+        <h1>Compatible with all devices</h1>
+        <p> Kollo is compatible on all mobile devices, <br>
+            both as a webapp and as an app in the <br>
+            Apple store and Google play store</p>
+      </div>
     </div>
-    <div class="row" id="row3" style="background-color:green">
-
+    <div class="row" id="row3">
+      <div id="row3Text">
+        <h1>Fully customizable calendar</h1>
+        <p> View all of your classes, group meetings <br>
+            and assigment deadlines in a fully customizable <br>
+            calendar</p>
+      </div>
     </div>
-    <div class="row" id="row4" style="background-color:grey">
-
+    <div class="row" id="row4">
+      <div id="row4Text">
+        <h1>Accessible for everyone</h1>
+        <p>Kollo is specially designed for everyone, <br>
+          no matter who you are, where you are, or what <br>
+          type of equipment you are using</p>
+      </div>
+    </div>
+    <div class="row" id="row5">
+      <div id="row5Top">
+        <h1>Get a full walkthrough of Kollo</h1>
+        <button id="btn" type="button">Learn more</button>
+      </div>
+      <div id="row5Bottom">
+        <table>
+          <tr>
+            <th>
+              Kollo
+            </th>
+            <th>
+              Contact
+            </th>
+            <th>
+              About us
+            </th>
+          </tr>
+          <tr>
+            <td>
+              Kollo is a cloud based learning     <br>
+              management system, that will take   <br>
+              your organisation to the next level.<br>
+              Kollo lets you activate human       <br>
+              capital, strengthen employee        <br>
+              competence and simplify             <br>
+              performance management.
+            </td>
+            <td>
+              <p>Email:</p> contact@kollo.com    <br>
+              <p>USA:</p>   310-974-1438         <br>
+              <p>Norway:</p>  90080821
+            </td>
+            <td>
+              We are a small company based out  <br>
+              of Oslo, Norway. Our team consist <br>
+              of seven dedicated student, who   <br>
+              has created the best LMS ever.
+            </td>
+          </tr>
+        </table>
+        <div id="awards">
+          <img src="bilder/award1.png">
+          <img src="bilder/award2.png">
+          <img src="bilder/award3.png">
+          <img src="bilder/award4.png">
+          <img src="bilder/award5.png">
+        </div>
+      </div>
     </div>
   </body>
   <script src="swipeandscroll.js"></script>
