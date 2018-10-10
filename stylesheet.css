@@ -236,7 +236,7 @@ nav .material-icons:hover {
     position: relative;
   }
 
-/*
+
   nav{
     position: fixed;
     width: 80%;
@@ -245,7 +245,7 @@ nav .material-icons:hover {
     top: 50px;
     left: -80%;
   }
-*/
+
   .mainMenu {
     display: block;
     top: 30px;
