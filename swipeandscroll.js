@@ -86,30 +86,41 @@ function p1hanleTouchMove(evt){
 
 
 var privateTimeout = 0;
-
+var lastScrollZeroTimeout;
 
 var lastScroll=0;
 
 function scrollToLocked(e){
 
+  clearTimeout(lastScrollZeroTimeout);
+
   if (e.deltaY < 0 && e.deltaY < lastScroll && privateTimeout == 0) {
     scrollPage("prev");
-    startPrivateTimeout();
+    startScrollTimeout();
   } else if (e.deltaY > 0 && e.deltaY > lastScroll && privateTimeout == 0) {
     scrollPage("next");
-    startPrivateTimeout();
+    startScrollTimeout();
   }
 
-  lastScroll = e.deltaY*7;
+  lastScroll = e.deltaY;
+
+
+  lastScrollZeroTimeout = setTimeout(function(){
+    lastScroll = 0;
+    console.log("ZERO OUT")
+   }, 500);
 
 }
 
-function startPrivateTimeout(){
+function startScrollTimeout(){
   privateTimeout=1;
   setTimeout(function(){
     privateTimeout=0;
   }, 500);
 }
+
+
+
 
 
 /*var lastScroll=0;
