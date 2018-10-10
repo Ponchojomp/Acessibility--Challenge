@@ -1,15 +1,13 @@
+
+
 p {
     display: inline-block;
 }
 
 #row1 {
   background-image:
-        linear-gradient(
-          rgb(0, 0, 120, 0.85),
-          rgb(0, 0, 120, 0.85)
-        ),
-        url("bilder/stock1.jpeg");
-      background-position: center;
+        url("bilder/stock1.jpg");
+  background-position: center;
 }
 
 #row1 h1{
@@ -32,11 +30,24 @@ p {
   text-align: left;
   font-size: 4vw;
   line-height: 100px;
-font-weight: 800;
+  font-weight: 800;
 }
 
 #row1Bilde{
   width: 70%;
+}
+
+#row2Box{
+    position: absolute;
+    width: 80%;
+    height: 60%;
+    margin-top: 10%;
+    margin-left: 10%;
+    background: red;
+}
+
+#row2Bilde{
+  width: 40%;
 }
 
 #row2Text{
@@ -56,6 +67,21 @@ font-weight: 800;
   font-weight: 600;
 }
 
+#row3Box{
+    position: absolute;
+    width: 80%;
+    height: 60%;
+    margin-top: 10%;
+    margin-left: 10%;
+    background: red;
+}
+
+#row3Bilde{
+  width: 40%;
+  position: absolute;
+  right: 5%;
+}
+
 #row3Text{
   position: absolute;
   left: 5%;
@@ -71,6 +97,19 @@ font-weight: 800;
 #row3Text p {
   font-size: 1.5vw;
   font-weight: 600;
+}
+
+#row4Box{
+    position: absolute;
+    width: 80%;
+    height: 60%;
+    margin-top: 10%;
+    margin-left: 10%;
+    background: red;
+}
+
+#row4Bilde{
+  width: 40%;
 }
 
 #row4Text{
@@ -92,13 +131,9 @@ font-weight: 800;
 
 #row5Top{
   background-image:
-        linear-gradient(
-          rgb(0, 0, 120, 0.85),
-          rgb(0, 0, 120, 0.85)
-        ),
-        url("bilder/stock2.jpeg");
+        url("bilder/stock2.jpg");
       background-position: center;
-      height:50%;
+      height:100%;
       padding-top: 10%;
       text-align: center;
 
@@ -110,8 +145,19 @@ font-weight: 800;
   font-weight: 800;
 }
 
+#row5Bottom{
+  position: absolute;
+  width: 80%;
+  margin-top: 2%;
+  margin-left: 10%;
+  background: red;
+}
+
 #awards{
-  padding: 3% 0% 0% 19%;
+  position: absolute;
+  width: 100%;
+  margin-top: 15%;
+  margin-left: 5%;
 }
 
 button {
@@ -124,21 +170,22 @@ button {
   background-color: #3bd400;
   border-color: #3bd400;
   border-radius: 15px;
-
+  margin-bottom: 10%;
 }
 
 button:hover {background-color: #22f000}
 
 table{
-  padding-left: 27%;
+  position: absolute;
+  width: 100%;
+  background: red;
 }
 
 th{
   font-size: 1.3vw;
-  padding: 5% 0% 5% 0%;
 }
 
 td{
-  padding-left: 50px;
+  padding-left: 10%;
   font-size:0.9vw;
 }
