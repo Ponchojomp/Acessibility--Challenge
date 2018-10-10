@@ -9,7 +9,6 @@ function getScreeWidth(){
 
 function widthChange(){
   if(screenwidth >= 900){
-    showNavMenu();
     document.body.style.overflow="hidden";
     window.addEventListener('wheel', scrollToLocked);
   } else {
@@ -86,9 +85,38 @@ function p1hanleTouchMove(evt){
 }
 
 
+var privateTimeout = 0;
+
+
 var lastScroll=0;
 
 function scrollToLocked(e){
+
+  if (e.deltaY < 0 && e.deltaY < lastScroll && privateTimeout == 0) {
+    scrollPage("prev");
+    startPrivateTimeout();
+  } else if (e.deltaY > 0 && e.deltaY > lastScroll && privateTimeout == 0) {
+    scrollPage("next");
+    startPrivateTimeout();
+  }
+
+  lastScroll = e.deltaY*7;
+
+}
+
+function startPrivateTimeout(){
+  privateTimeout=1;
+  setTimeout(function(){
+    privateTimeout=0;
+  }, 500);
+}
+
+
+/*var lastScroll=0;
+
+function scrollToLocked(e){
+
+  console.log("deltaY: " + e.deltaY);
 
   var lastScrollDecreseInterval;
 
@@ -114,18 +142,23 @@ function scrollToLocked(e){
     setTimeout(function(a){
       window.addEventListener('wheel', scrollToLocked);
       lastScrollDecreseInterval = setInterval(lastScrollDecrease, 500);
-    },550);
+    },500);
 
   } else if(e.deltaY == 2.5 && e.deltaY ==-2.5) {
     clearInterval(lastScrollDecreseInterval);
-    lastScroll = 2.5;
-  } else {
-    function lastScrollDecrease(){
-        lastScroll = (e.deltaY)*0.55;
-    }
+    lastScroll = 0;
   }
 
-}
+
+  function lastScrollDecrease(){
+      lastScroll = (e.deltaY)*0.95;
+      console.log("lastScroll: " + lastScroll);
+  }
+
+
+}*/
+
+
 
 var oldScrollTarget = "row1";
 
