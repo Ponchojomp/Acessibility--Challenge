@@ -102,7 +102,7 @@ function scrollToLocked(e){
     startScrollTimeout();
   }
 
-  lastScroll = e.deltaY;
+  lastScroll = e.deltaY*2;
 
 
   lastScrollZeroTimeout = setTimeout(function(){
