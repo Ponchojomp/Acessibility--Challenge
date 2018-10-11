@@ -34,7 +34,10 @@ p {
 }
 
 #row1Bilde{
-  width: 70%;
+  position: absolute;
+  top: 5%;
+  margin-left: 20%;
+  width: 60%;
 }
 
 #row2Box{
@@ -43,11 +46,13 @@ p {
     height: 60%;
     margin-top: 10%;
     margin-left: 10%;
-    background: red;
 }
 
 #row2Bilde{
-  width: 40%;
+  position: absolute;
+  top: 20%;
+  width: 45%;
+  left: 0%;
 }
 
 #row2Text{
@@ -73,13 +78,13 @@ p {
     height: 60%;
     margin-top: 10%;
     margin-left: 10%;
-    background: red;
 }
 
 #row3Bilde{
-  width: 40%;
   position: absolute;
-  right: 5%;
+  top: 20%;
+  right: 0%;
+  width: 50%;
 }
 
 #row3Text{
@@ -105,11 +110,15 @@ p {
     height: 60%;
     margin-top: 10%;
     margin-left: 10%;
-    background: red;
+    max-height: 80%;
 }
 
 #row4Bilde{
-  width: 40%;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  width: 50%;
+
 }
 
 #row4Text{
@@ -150,7 +159,6 @@ p {
   width: 80%;
   margin-top: 2%;
   margin-left: 10%;
-  background: red;
 }
 
 #awards{
@@ -160,9 +168,9 @@ p {
   margin-left: 5%;
 }
 
-button {
+input {
   display: inline-block;
-  padding: 15px 25px;
+  padding: 15px 1px;
   font-size: 1vw;
   cursor: pointer;
   text-align: center;
@@ -173,12 +181,11 @@ button {
   margin-bottom: 10%;
 }
 
-button:hover {background-color: #22f000}
+input:hover {background-color: #22f000}
 
 table{
   position: absolute;
   width: 100%;
-  background: red;
 }
 
 th{
