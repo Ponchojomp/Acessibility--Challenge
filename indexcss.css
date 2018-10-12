@@ -169,10 +169,10 @@ p {
   margin-bottom:
 }
 
-input {
+button {
   display: inline-block;
-  padding: 15px 1px;
-  font-size: 1vw;
+  padding: 15px 20px;
+  font-size: 18px;
   cursor: pointer;
   text-align: center;
   color: white;
@@ -180,6 +180,12 @@ input {
   border-color: #3bd400;
   border-radius: 15px;
   margin-bottom: 5%;
+  outline: none !important;
+}
+
+button > a{
+  text-decoration: none;
+  color: white;
 }
 
 input:hover {background-color: #22f000}
