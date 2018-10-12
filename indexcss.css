@@ -35,7 +35,7 @@ p {
 
 #row1Bilde{
   position: absolute;
-  top: 5%;
+  top: 60px;
   margin-left: 20%;
   width: 60%;
 }
@@ -59,6 +59,7 @@ p {
   position: absolute;
   right: 0%;
   top: 30%;
+  width: 50%;
 }
 
 #row2Text h1{
@@ -116,7 +117,6 @@ p {
 #row4Bilde{
   position: absolute;
   top: 20%;
-  left: 5%;
   width: 50%;
 
 }
@@ -206,7 +206,116 @@ td{
 
 @media only screen and (max-width : 900px){
 
+  #row1Bilde {
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+    top: 50px;
+  }
 
+  #row1{
+    height: auto;
+    padding-bottom: 220px;
+  }
+
+  #row2{
+    position: relative;
+  }
+
+  #row2Box{
+    position: relative;
+    margin-top: 0px;
+  }
+
+  #row2Bilde{
+    position: relative;
+    width: 100%;
+  }
+
+  #row2Text{
+    position: relative;
+    width: 100%;
+  }
+
+  #row2Text > h1 {
+    font-size: 26px;
+  }
+
+  #row2Text > p {
+    font-size: 18px;
+  }
+
+  #row3{
+    position: relative;
+    top: 120px;
+  }
+
+  #row3Box{
+    position: relative;
+    margin-top: 0px;
+  }
+
+  #row3Bilde{
+    position: relative;
+    width: 100%;
+  }
+
+  #row3Text{
+    position: relative;
+    width: 100%;
+  }
+
+  #row3Text > h1 {
+    font-size: 26px;
+  }
+
+  #row3Text > p {
+    font-size: 18px;
+  }
+
+  #row4{
+    position: relative;
+    top: 150px;
+  }
+
+  #row4Box{
+    position: relative;
+    margin-top: 0px;
+  }
+
+  #row4Bilde{
+    position: relative;
+    width: 100%;
+  }
+
+  #row4Text{
+    position: relative;
+    width: 100%;
+  }
+
+  #row4Text > h1 {
+    font-size: 26px;
+  }
+
+  #row4Text > p {
+    font-size: 18px;
+  }
+
+  #row5{
+    margin-top: 150px;
+  }
+
+  #row5Bottom{
+    position: relative;
+  }
+
+  table {
+    position: relative;
+  }
+
+  #awards{
+    margin-top: 5px;
+  }
 
 
 
