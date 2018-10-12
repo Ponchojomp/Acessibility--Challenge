@@ -107,7 +107,6 @@ function scrollToLocked(e){
 
   lastScrollZeroTimeout = setTimeout(function(){
     lastScroll = 0;
-    console.log("ZERO OUT")
    }, 500);
 
 }
@@ -169,6 +168,32 @@ function scrollToLocked(e){
 
 }*/
 
+activateTopLinks();
+
+
+function activateTopLinks(){
+  document.getElementById("rowClick1").addEventListener('click', linkScroll);
+  document.getElementById("rowClick2").addEventListener('click', linkScroll);
+  document.getElementById("rowClick3").addEventListener('click', linkScroll);
+  document.getElementById("rowClick4").addEventListener('click', linkScroll);
+}
+
+function deActivateTopLinks(){
+  document.getElementById("rowClick1").removeEventListener('click', linkScroll);
+  document.getElementById("rowClick2").removeEventListener('click', linkScroll);
+  document.getElementById("rowClick3").removeEventListener('click', linkScroll);
+  document.getElementById("rowClick4").removeEventListener('click', linkScroll);
+}
+
+
+function linkScroll(){
+
+  var targetElmnt = "row" + (this.id).substr(-1);
+  deActivateTopLinks();
+  setTimeout(function(){activateTopLinks()},500);
+  scrollPage(targetElmnt);
+
+}
 
 
 var oldScrollTarget = "row1";
