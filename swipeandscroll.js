@@ -119,55 +119,6 @@ function startScrollTimeout(){
 }
 
 
-
-
-
-/*var lastScroll=0;
-
-function scrollToLocked(e){
-
-  console.log("deltaY: " + e.deltaY);
-
-  var lastScrollDecreseInterval;
-
-  if (e.deltaY < 0 && e.deltaY < lastScroll) {
-    clearInterval(lastScrollDecreseInterval);
-    scrollPage("prev");
-    window.removeEventListener('wheel', scrollToLocked);
-
-    lastScroll = (e.deltaY);
-
-    setTimeout(function(a){
-      window.addEventListener('wheel', scrollToLocked);
-      lastScrollDecreseInterval = setInterval(lastScrollDecrease, 500);
-    },500);
-
-  } else if (e.deltaY > 0 && e.deltaY > lastScroll) {
-    clearInterval(lastScrollDecreseInterval);
-    scrollPage("next");
-    window.removeEventListener('wheel', scrollToLocked);
-
-    lastScroll = (e.deltaY);
-
-    setTimeout(function(a){
-      window.addEventListener('wheel', scrollToLocked);
-      lastScrollDecreseInterval = setInterval(lastScrollDecrease, 500);
-    },500);
-
-  } else if(e.deltaY == 2.5 && e.deltaY ==-2.5) {
-    clearInterval(lastScrollDecreseInterval);
-    lastScroll = 0;
-  }
-
-
-  function lastScrollDecrease(){
-      lastScroll = (e.deltaY)*0.95;
-      console.log("lastScroll: " + lastScroll);
-  }
-
-
-}*/
-
 activateTopLinks();
 
 
