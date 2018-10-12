@@ -209,7 +209,7 @@ function scrollPage(elmnt){
     var scrollDistance = elmntTop - docTop;
     var percentage = 0;
     var percentageSum = 0;
-    var scrollTimeInterval = setInterval(smoothScroll, 30);
+    var scrollTimeInterval = setInterval(smoothScroll, 25);
 
   function smoothScroll(){
 
@@ -288,7 +288,7 @@ function keyEvent(e){
     document.body.removeEventListener("keydown", keyEvent);
     setTimeout(function(){
       document.body.addEventListener("keydown", keyEvent);
-    },420);
+    },500);
 
   }
 }
