@@ -166,6 +166,7 @@ p {
   width: 100%;
   margin-top: 15%;
   margin-left: 5%;
+  margin-bottom:
 }
 
 input {
@@ -178,7 +179,7 @@ input {
   background-color: #3bd400;
   border-color: #3bd400;
   border-radius: 15px;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 input:hover {background-color: #22f000}
