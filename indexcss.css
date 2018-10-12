@@ -208,11 +208,20 @@ td{
 
 @media only screen and (max-width : 900px){
 
+  body{
+    float:left;
+  }
+
   #row1Bilde {
     position: relative;
     width: 80%;
     margin-left: 10%;
     top: 50px;
+  }
+
+  .row{
+    min-height: inherit;
+    margin-bottom: 25px;
   }
 
   #row1{
@@ -222,6 +231,7 @@ td{
 
   #row2{
     position: relative;
+    margin-top: -25px;
   }
 
   #row2Box{
@@ -249,7 +259,6 @@ td{
 
   #row3{
     position: relative;
-    top: 120px;
   }
 
   #row3Box{
@@ -277,7 +286,7 @@ td{
 
   #row4{
     position: relative;
-    top: 150px;
+    margin-bottom: 50px;
   }
 
   #row4Box{
@@ -304,7 +313,7 @@ td{
   }
 
   #row5{
-    margin-top: 150px;
+    margin-bottom: 10px;
   }
 
   #row5Bottom{
@@ -316,6 +325,7 @@ td{
   }
 
   #awards{
+    position: relative;
     margin-top: 5px;
   }
 

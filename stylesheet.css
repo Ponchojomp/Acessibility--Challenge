@@ -39,7 +39,6 @@ nav {
   display: inline-block;
   font-size: 20px;
   padding: 11px 2px;
-  cursor: pointer;
   font-weight: 800;
   color: #444444;
   z-index: 1100;
@@ -55,6 +54,10 @@ nav {
   padding: 17px 16px;
   cursor: pointer;
   color: #444444;
+}
+
+.mainMenuItems:hover {
+  color: black;
 }
 
 .rightMenu {
