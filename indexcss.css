@@ -92,6 +92,7 @@ p {
   position: absolute;
   left: 0%;
   top: 30%;
+  width: 50%;
 }
 
 #row3Text h1{
@@ -125,6 +126,7 @@ p {
   position: absolute;
   right: 0%;
   top: 30%;
+  width: 50%;
 }
 
 #row4Text h1{
