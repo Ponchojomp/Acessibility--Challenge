@@ -1,6 +1,9 @@
-getScreeWidth();
-
+var isChrome = !!window.chrome && !!window.chrome.webstore;
+var isEdge = !window.isIE && !!window.StyleMedia;
+var isIE = /*@cc_on!@*/false || !!document.documentMode;
 var screenwidth = 1920;
+
+getScreeWidth();
 
 function getScreeWidth(){
     screenwidth = screen.width;
@@ -9,8 +12,13 @@ function getScreeWidth(){
 
 function widthChange(){
   if(screenwidth >= 900){
-    document.body.style.overflow="hidden";
-    window.addEventListener('wheel', scrollToLocked);
+    if(isEdge != true && isIE != true){
+      document.body.style.overflow="hidden";
+      window.addEventListener('wheel', scrollToLocked);
+    }else{
+      document.body.style.overflow="auto";
+      window.removeEventListener('wheel', scrollToLocked);
+    }
   } else {
     closeNavMenu();
     document.body.style.overflow="auto";
