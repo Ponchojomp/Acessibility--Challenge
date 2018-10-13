@@ -154,7 +154,7 @@ function scrollPage(elmnt){
   if(screenwidth<900){
     closeNavMenu();
   }
-  var docTop = document.documentElement.scrollTop;
+  var docTop = document.scrollingElement.scrollTop;
   var numRows = document.querySelectorAll('.row').length
   if(elmnt == "next"){
     scrollTarget = String("row"+numRows);
